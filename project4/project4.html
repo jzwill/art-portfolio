@@ -1,72 +1,76 @@
-<div class="headerPgraph">
-  <h1>FAQ</h1>
-  <p>For this assignment, we had to make a FAQ on a topic we were knowledgeable about. I chose character design because
-    that's something I feel that I'm pretty good at.</p>
-</div>
-
 <main>
-  <div class="header-div">
-    <h1>Character Design</h1>
-    <p>- faq - </p>
-    <img src="project1/images/ca-hero.1.webp"
-      alt="A cropped photo of someone's design of a space pirate with a high-tech sextant over one eye, their other eye obscured by an eyepatch.">
-  </div>
+  <div id="secret">
+    <div id="site-content">
+      <div id="left-side">
 
-  <div class="button-div">
-    <button class="q-buttons" id="q-button-1">
-      <p>How do I get started?</p>
-      <h2 class="icon" id="icon-1">+</h2>
-    </button>
-    <p class="answers" id="answer-1">To get started with designing a character, I often like to gather reference
-      images from the internet. Pinterest is a good source of these, but you can really find them anywhere. Combining
-      a bunch of images together to form an image board for the character can be very helpful as well. Having multiple
-      references for design elements you'd like to integrate makes the process a lot smoother.</p>
+        <div class="content-groupings">
+          <h1>Hello!</h1>
+          <p>I'm Jon, and I'd like to formally welcome you to my gallery website! This is a collection of pretty much
+            all my creative energy for the past year (but mainly my work for IMS322). Hope you enjoy looking through it!
+          </p>
+        </div>
 
-    <div class="spacer"></div>
+        <div class="content-groupings">
+          <h1>Art</h1>
+          <p>I am an artist, who is thinking about specializing in character design. I find the process of designing
+            characters really enjoyable, and like to think I'm pretty good at it. I'm constantly iterating on designs,
+            as you can see below- I don't settle on a design until it's perfect.</p>
+          <div class="img-holder">
+            <img class="artSlides" src="project4/images/picture1.webp" onclick="this.requestFullscreen()"
+              alt="Character design progression for my character, Cleo.">
+            <img class="artSlides" src="project4/images/picture2.webp" onclick="this.requestFullscreen()"
+              alt="Character design progression for my character, Kazem.">
+            <img class="artSlides" src="project4/images/picture3.webp" onclick="this.requestFullscreen()"
+              alt="Character design progression for my character, Serapis.">
+            <img class="artSlides" src="project4/images/picture4.webp" onclick="this.requestFullscreen()"
+              alt="Character design process for an unnamed demon character.">
 
-    <button class="q-buttons" id="q-button-2">
-      <p>What's the best place to find inspiration?</p>
-      <h2 class="icon" id="icon-2">+</h2>
-    </button>
-    <p class="answers" id="answer-2">It can often be hard to come up with a character design. I recommend checking out
-      sites like Pinterest for inspiration, you can scroll through endless ideas and it can help your thoughts start
-      to form.
-    </p>
+            <button class="leftie" onclick="plusDivsArt(-1)">&#10094;</button>
+            <button class="rightie" onclick="plusDivsArt(+1)">&#10095;</button>
+          </div>
+        </div>
 
-    <div class="spacer"></div>
+        <div class="content-groupings">
+          <h1>Photography</h1>
+          <p>Photography isn't really something I pursue. It's not a hobby or anything, though I do feel I have a bit of
+            a knack for it. I think of it as a fun way to show my artistic abilities, and I enjoy doing it when I
+            can.</p>
+          <div class="img-holder">
+            <img class="photoSlides" src="project4/images/photo1.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of some jellyfish.">
+            <img class="photoSlides" src="project4/images/photo2.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of a spookily-lit cave entrance.">
+            <img class="photoSlides" src="project4/images/photo3.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of a marsh reflecting sunlight.">
+            <img class="photoSlides" src="project4/images/photo4.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of a snowstorm on campus.">
+            <img class="photoSlides" src="project4/images/photo5.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of a canopy.">
+            <img class="photoSlides" src="project4/images/photo6.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of an aquarium tunnel.">
+            <img class="photoSlides" src="project4/images/photo7.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of a rocky path.">
+            <img class="photoSlides" src="project4/images/photo8.webp" onclick="this.requestFullscreen()"
+              alt="A photograph of the moon.">
 
-    <button class="q-buttons" id="q-button-3">
-      <p>What's your process?</p>
-      <h2 class="icon" id="icon-3">+</h2>
-    </button>
-    <p class="answers" id="answer-3">When designing characters, I like to start by envisioning their role and creating
-      a moodboard of sorts. After that, I go and gather reference images from various sites, one for the pose and
-      others for the design I envision. From there, I draw a featureless character as a base, and then construct my
-      reference sheet.</p>
+            <button class="leftie" onclick="plusDivsPhotos(-1)">&#10094;</button>
+            <button class="rightie" onclick="plusDivsPhotos(+1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="spacer"></div>
+      <div id="right-side">
 
-    <button class="q-buttons" id="q-button-4">
-      <p>How do I take my designs to the next level?</p>
-      <h2 class="icon" id="icon-4">+</h2>
-    </button>
-    <p class="answers" id="answer-4">The most important thing (to me) in leveling up your designs is to study real
-      cultures and incorporate designs from them into your own. In a fictional setting, consider drawing inspiration
-      from a particular era! Having a cohesive design sense between your characters really takes your designs to the
-      next level.</p>
-  </div>
-
-  <p id="documentation-text">I believe the design process for this project went very well. From the beginning, I
-    had a
-    general idea in
-    mind
-    for the layout, and I believe I executed it perfectly. Picking a topic I am interested in (character design)
-    helped too, as I was able to give some informed tips that I feel are useful to the up-and-coming designer.
-  </p>
-
-  <div class="documentation-box">
-    <img src="project1/images/Illustration2.webp" alt="The rough sketch of my website layout.">
-    <img src="project1/images/Illustration.webp" alt="The wireframe of my website layout.">
+        <div class="content-groupings">
+          <h1>Graphic Design</h1>
+          <p>I started taking graphic design classes freshman year, and have really enjoyed them! Designing websites,
+            posters, etc. has been a lot of fun, and it's something I've come to enjoy greatly. Hopefully you can see my
+            passion for it reflected in my websites showcased here, and this poster I created for IMS254.</p>
+          <img src="project4/images/poster.webp" onclick="this.requestFullscreen()"
+            alt="A poster I created for the band The Killers.">
+        </div>
+      </div>
+    </div>
   </div>
 
 </main>

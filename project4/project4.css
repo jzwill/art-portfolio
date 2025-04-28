@@ -1,15 +1,66 @@
 #project4-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 60px 25px 60px 25px;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px 0px 0px;
 }
 
-#project4-page .headerPgraph {
-  padding: 0px 0px 40px 0px;
-  max-width: 500px;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 60px 0px;
+  width: 100%;
 }
 
-#project4-page .headerPgraph h1 {
+#project4-page img {
+  padding: 10px 0px 10px 0px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#secret {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+#site-content {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 30px 0px 10px;
+  gap: 35px;
+}
+
+#right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 10px 0px 30px;
+  gap: 35px;
+}
+
+.content-groupings {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 5px 0px;
+}
+
+#project4-page h1 {
   color: #ffffff;
   font-family: "nikkyouSans";
   font-size: 32px;
@@ -17,7 +68,7 @@
   padding: 0px 0px 8px 0px;
 }
 
-#project4-page .headerPgraph p {
+#project4-page p {
   color: #ffffff;
   font-family: "courierNew";
   font-size: 17px;
@@ -25,220 +76,45 @@
   padding: 0px 0px 8px 0px;
 }
 
-@font-face {
-  font-family: "breveDisplay";
-  src: url(fonts/Breve-Display.otf);
+.img-holder {
+  position: relative;
 }
 
-@font-face {
-  font-family: "breveSlab";
-  src: url(fonts/Breve-Slab-Text-Bold.ttf);
+.img-holder button {
+  position: absolute;
+  bottom: 42%;
+  width: 20px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 #000000);
 }
 
-@font-face {
-  font-family: "ysbeauSemiBold";
-  src: url(fonts/Ysabeau-SemiBold.ttf);
+.leftie {
+  left: 0px;
 }
 
-#project4-page main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1100px;
-  background-color: #fcd6c1;
-  border-radius: 20px;
-  border: #000000 5px solid;
-  padding: 60px 25px 60px 25px;
-}
-
-#project4-page .header-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-#project4-page h1 {
-  font-family: "breveDisplay";
-  font-size: 8ch;
-  color: #ef8762;
-}
-
-#project4-page .header-div p {
-  font-family: "ysbeauSemiBold";
-  font-size: 3ch;
-  color: #ec7072;
-  padding: 0px 0px 20px 0px;
-}
-
-#project4-page img {
-  max-width: 100%;
-  height: auto;
-  border: #ec7072 5px solid;
-  border-radius: 25px;
-}
-
-#project4-page .button-div {
-  padding: 35px;
-}
-
-#project4-page .q-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5ch;
-  width: 100%;
-  height: 45px;
-  background-color: #f8baa1;
-  transition: 0.3s;
-  color: #ef8762;
-  border: #ef8762 2.5px solid;
-  border-radius: 5px;
-}
-
-#project4-page .q-buttons p {
-  padding: 5px 10px 10px 10px;
-  font-family: "breveSlab";
-  font-size: 4ch;
-}
-
-#project4-page .q-buttons h2 {
-  padding: 0px 10px 10px 10px;
-  font-family: "breveDisplay";
-  font-size: 5ch;
-  transition: 0.3s;
-}
-
-#project4-page .hovered-over,
-#project4-page .q-buttons:hover {
-  background-color: #f7afa3;
-  color: #ec7072;
-  border: #ec7072 2.5px solid;
-  border-radius: 5px;
-}
-
-#project4-page .answers {
-  background-color: #f9cab8;
-  transition: 0.5s;
-  height: 0;
-  overflow: hidden;
-  font-family: "ysbeauSemiBold";
-  font-size: 2.3ch;
-  color: #ec7072;
-  padding: 0px 10px 0px 10px;
-}
-
-#project4-page .inactive-icon {
-  transform: rotate(-45deg);
-}
-
-#project4-page .open-answer {
-  height: 7rem;
-  border: #ec7072 2.5px solid;
-  border-top: none;
-  border-radius: 5px;
-}
-
-#project4-page .documentation-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-}
-
-#project4-page #documentation-text {
-  font-family: "ysbeauSemiBold";
-  font-size: 3ch;
-  padding: 0px 0px 20px 0px;
-  color: #ec7072;
-  text-align: center;
-}
-
-#project4-page .spacer {
-  height: 1.5rem;
+.rightie {
+  right: 0px;
 }
 
 /* --- */
 
-@media screen and (max-width: 1150px) {
-  #project4-page h1 {
-    font-size: 7ch;
-  }
-
-  #project4-page .header-div p {
-    font-size: 2.5ch;
-  }
-
-  #project4-page .button-div {
-    padding: 35px 15px 35px 15px;
-  }
-
-  #project4-page .q-buttons p {
-    font-size: 3.3ch;
-  }
-
-  #project1-page .q-buttons h2 {
-    font-size: 4ch;
-  }
-
-  #project4-page .answers {
-    font-size: 2.3ch;
-  }
-
-  #project4-page .open-answer {
-    height: 10rem;
-  }
-
-  #project4-page .documentation-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  #project4-page .documentation-box img {
-    max-width: 50%;
-  }
-
-  #project4-page #documentation-text {
-    font-size: 2.5ch;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  #project4-page {
-    padding: 30px 0px 60px 0px;
-  }
-
-  #project4-page .button-div {
-    padding: 35px 15px 20px 15px;
-  }
-
-  #project4-page .q-buttons p {
-    font-size: 2.4ch;
-  }
-
-  #project4-page .q-buttons h2 {
-    font-size: 3.3ch;
-  }
-
-  #project4-page .answers {
-    font-size: 2ch;
-  }
-}
-
 @media screen and (max-width: 480px) {
-  #project4-page .headerPgraph {
-    padding: 20px 0px 40px 0px;
-    max-width: 480px;
-  }
-  #project4-page {
+  #site-content {
+    margin: 40px 0px 0px 0px;
     display: flex;
-    justify-content: center;
-    padding: 60px 10px 60px 10px;
-    max-width: 480px;
+    justify-content: space-between;
+    flex-direction: column;
   }
 
-  #project4-page main {
-    padding: 30px 5px 30px 5px;
+  #left-side {
+    padding: 0px 10px 0px 10px;
+  }
+
+  #right-side {
+    padding: 0px 10px 0px 10px;
   }
 }
