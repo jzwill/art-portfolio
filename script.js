@@ -128,6 +128,7 @@ function showProject4() {
   project3Page.style.display = "none";
   project4Page.style.display = "block"; 
   homeNav.classList.remove("taskbar-button-active");
+  homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.remove("taskbar-button-active");
