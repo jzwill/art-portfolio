@@ -1,4 +1,4 @@
-#rock-page {
+#rockpage-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@ main {
   width: 100%;
 }
 
-#rock-page img {
+#rockpage-page img {
   padding: 10px 0px 10px 0px;
   border-radius: 15px;
   cursor: pointer;
@@ -60,7 +60,7 @@ main {
   padding: 0px 0px 5px 0px;
 }
 
-#rock-page h1 {
+#rockpage-page h1 {
   color: #ffffff;
   font-family: "nikkyouSans";
   font-size: 32px;
@@ -68,7 +68,7 @@ main {
   padding: 0px 0px 8px 0px;
 }
 
-#rock-page p {
+#rockpage-page p {
   color: #ffffff;
   font-family: "courierNew";
   font-size: 17px;

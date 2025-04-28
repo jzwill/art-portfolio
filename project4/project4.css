@@ -26,13 +26,11 @@ main {
   color: #ffffff;
   background-color: #000000;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
   cursor: pointer;
 }
 
 .project-button:hover {
-  color: #ffffff;
-  background-color: #4c4c4c;
+  opacity:0.7;
 }
 
 #secret {

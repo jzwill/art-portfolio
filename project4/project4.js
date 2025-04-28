@@ -1,6 +1,6 @@
 const rockNav = document.getElementById("rock-nav");
 
-const rockPage = document.getElementById("rock-page");
+const rockPage = document.getElementById("rockpage-page");
 
 //
 

@@ -37,6 +37,11 @@ main {
   width: 100%;
 }
 
+::selection {
+  color: black;
+  background: #C3C3C3;
+}
+
 #taskbar-header {
   position: fixed;
   top: 0;
