@@ -25,6 +25,11 @@ const routes = [
     html: "project4/project4.html",
     js: "project4/project4.js",
   },
+  {
+    id: "rockpage",
+    html: "project4/rockpage/rockpage.html",
+    js: "project4/rockpage/rockpage.js",
+  },
 ];
 
 function loadRoute(route) {
