@@ -20,26 +20,6 @@ project4Nav.addEventListener("click", showProject4);
 
 //
 
-function showProject4() {
-  homePage.style.display = "none";
-  project1Page.style.display = "none";
-  project2Page.style.display = "none";
-  project3Page.style.display = "none";
-  project4Page.style.display = "block"; 
-  homeNav.classList.remove("taskbar-button-active");
-  project1Nav.classList.remove("taskbar-button-active");
-  project2Nav.classList.remove("taskbar-button-active");
-  project3Nav.classList.remove("taskbar-button-active");
-  project4Nav.classList.toggle("taskbar-button-active");
-
-  audioFile.pause();
-  playImage.src = "project2/images/buttonplay.webp";
-  playButton.removeEventListener("click", pauseAudio);
-  playButton.addEventListener("click", playAudio);
-  clearInterval(intervalID);
-  clearInterval(intervalID2);
-}
-
 function showHome() {
   homePage.style.display = "block";
   project1Page.style.display = "none";
@@ -132,6 +112,26 @@ function showProject3() {
   project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.toggle("taskbar-button-active");
   project4Nav.classList.remove("taskbar-button-active");
+
+  audioFile.pause();
+  playImage.src = "project2/images/buttonplay.webp";
+  playButton.removeEventListener("click", pauseAudio);
+  playButton.addEventListener("click", playAudio);
+  clearInterval(intervalID);
+  clearInterval(intervalID2);
+}
+
+function showProject4() {
+  homePage.style.display = "none";
+  project1Page.style.display = "none";
+  project2Page.style.display = "none";
+  project3Page.style.display = "none";
+  project4Page.style.display = "block"; 
+  homeNav.classList.remove("taskbar-button-active");
+  project1Nav.classList.remove("taskbar-button-active");
+  project2Nav.classList.remove("taskbar-button-active");
+  project3Nav.classList.remove("taskbar-button-active");
+  project4Nav.classList.toggle("taskbar-button-active");
 
   audioFile.pause();
   playImage.src = "project2/images/buttonplay.webp";
