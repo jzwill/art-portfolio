@@ -1,15 +1,15 @@
-#project1-page {
+#project4-page {
   display: flex;
   justify-content: center;
   padding: 60px 25px 60px 25px;
 }
 
-#project1-page .headerPgraph {
+#project4-page .headerPgraph {
   padding: 0px 0px 40px 0px;
   max-width: 500px;
 }
 
-#project1-page .headerPgraph h1 {
+#project4-page .headerPgraph h1 {
   color: #ffffff;
   font-family: "nikkyouSans";
   font-size: 32px;
@@ -17,7 +17,7 @@
   padding: 0px 0px 8px 0px;
 }
 
-#project1-page .headerPgraph p {
+#project4-page .headerPgraph p {
   color: #ffffff;
   font-family: "courierNew";
   font-size: 17px;
@@ -40,7 +40,7 @@
   src: url(fonts/Ysabeau-SemiBold.ttf);
 }
 
-#project1-page main {
+#project4-page main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,38 +51,38 @@
   padding: 60px 25px 60px 25px;
 }
 
-#project1-page .header-div {
+#project4-page .header-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-#project1-page h1 {
+#project4-page h1 {
   font-family: "breveDisplay";
   font-size: 8ch;
   color: #ef8762;
 }
 
-#project1-page .header-div p {
+#project4-page .header-div p {
   font-family: "ysbeauSemiBold";
   font-size: 3ch;
   color: #ec7072;
   padding: 0px 0px 20px 0px;
 }
 
-#project1-page img {
+#project4-page img {
   max-width: 100%;
   height: auto;
   border: #ec7072 5px solid;
   border-radius: 25px;
 }
 
-#project1-page .button-div {
+#project4-page .button-div {
   padding: 35px;
 }
 
-#project1-page .q-buttons {
+#project4-page .q-buttons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -96,28 +96,28 @@
   border-radius: 5px;
 }
 
-#project1-page .q-buttons p {
+#project4-page .q-buttons p {
   padding: 5px 10px 10px 10px;
   font-family: "breveSlab";
   font-size: 4ch;
 }
 
-#project1-page .q-buttons h2 {
+#project4-page .q-buttons h2 {
   padding: 0px 10px 10px 10px;
   font-family: "breveDisplay";
   font-size: 5ch;
   transition: 0.3s;
 }
 
-#project1-page .hovered-over,
-#project1-page .q-buttons:hover {
+#project4-page .hovered-over,
+#project4-page .q-buttons:hover {
   background-color: #f7afa3;
   color: #ec7072;
   border: #ec7072 2.5px solid;
   border-radius: 5px;
 }
 
-#project1-page .answers {
+#project4-page .answers {
   background-color: #f9cab8;
   transition: 0.5s;
   height: 0;
@@ -128,18 +128,18 @@
   padding: 0px 10px 0px 10px;
 }
 
-#project1-page .inactive-icon {
+#project4-page .inactive-icon {
   transform: rotate(-45deg);
 }
 
-#project1-page .open-answer {
+#project4-page .open-answer {
   height: 7rem;
   border: #ec7072 2.5px solid;
   border-top: none;
   border-radius: 5px;
 }
 
-#project1-page .documentation-box {
+#project4-page .documentation-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -147,7 +147,7 @@
   width: 50%;
 }
 
-#project1-page #documentation-text {
+#project4-page #documentation-text {
   font-family: "ysbeauSemiBold";
   font-size: 3ch;
   padding: 0px 0px 20px 0px;
@@ -155,26 +155,26 @@
   text-align: center;
 }
 
-#project1-page .spacer {
+#project4-page .spacer {
   height: 1.5rem;
 }
 
 /* --- */
 
 @media screen and (max-width: 1150px) {
-  #project1-page h1 {
+  #project4-page h1 {
     font-size: 7ch;
   }
 
-  #project1-page .header-div p {
+  #project4-page .header-div p {
     font-size: 2.5ch;
   }
 
-  #project1-page .button-div {
+  #project4-page .button-div {
     padding: 35px 15px 35px 15px;
   }
 
-  #project1-page .q-buttons p {
+  #project4-page .q-buttons p {
     font-size: 3.3ch;
   }
 
@@ -182,63 +182,63 @@
     font-size: 4ch;
   }
 
-  #project1-page .answers {
+  #project4-page .answers {
     font-size: 2.3ch;
   }
 
-  #project1-page .open-answer {
+  #project4-page .open-answer {
     height: 10rem;
   }
 
-  #project1-page .documentation-box {
+  #project4-page .documentation-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  #project1-page .documentation-box img {
+  #project4-page .documentation-box img {
     max-width: 50%;
   }
 
-  #project1-page #documentation-text {
+  #project4-page #documentation-text {
     font-size: 2.5ch;
   }
 }
 
 @media screen and (max-width: 620px) {
-  #project1-page {
+  #project4-page {
     padding: 30px 0px 60px 0px;
   }
 
-  #project1-page .button-div {
+  #project4-page .button-div {
     padding: 35px 15px 20px 15px;
   }
 
-  #project1-page .q-buttons p {
+  #project4-page .q-buttons p {
     font-size: 2.4ch;
   }
 
-  #project1-page .q-buttons h2 {
+  #project4-page .q-buttons h2 {
     font-size: 3.3ch;
   }
 
-  #project1-page .answers {
+  #project4-page .answers {
     font-size: 2ch;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #project1-page .headerPgraph {
+  #project4-page .headerPgraph {
     padding: 20px 0px 40px 0px;
     max-width: 480px;
   }
-  #project1-page {
+  #project4-page {
     display: flex;
     justify-content: center;
     padding: 60px 10px 60px 10px;
     max-width: 480px;
   }
 
-  #project1-page main {
+  #project4-page main {
     padding: 30px 5px 30px 5px;
   }
 }
