@@ -2,11 +2,13 @@ const homeNav = document.getElementById("home-nav");
 const project1Nav = document.getElementById("project1-nav");
 const project2Nav = document.getElementById("project2-nav");
 const project3Nav = document.getElementById("project3-nav");
+const project4Nav = document.getElementById("project4-nav");
 
 const homePage = document.getElementById("home-page");
 const project1Page = document.getElementById("project1-page");
 const project2Page = document.getElementById("project2-page");
 const project3Page = document.getElementById("project3-page");
+const project4Page = document.getElementById("project4-page");
 
 //
 
@@ -14,18 +16,41 @@ homeNav.addEventListener("click", showHome);
 project1Nav.addEventListener("click", showProject1);
 project2Nav.addEventListener("click", showProject2);
 project3Nav.addEventListener("click", showProject3);
+project4Nav.addEventListener("click", showProject4);
 
 //
+
+function showProject4() {
+  homePage.style.display = "none";
+  project1Page.style.display = "none";
+  project2Page.style.display = "none";
+  project3Page.style.display = "none";
+  project4Page.style.display = "block"; 
+  homeNav.classList.remove("taskbar-button-active");
+  project1Nav.classList.remove("taskbar-button-active");
+  project2Nav.classList.remove("taskbar-button-active");
+  project3Nav.classList.remove("taskbar-button-active");
+  project4Nav.classList.toggle("taskbar-button-active");
+
+  audioFile.pause();
+  playImage.src = "project2/images/buttonplay.webp";
+  playButton.removeEventListener("click", pauseAudio);
+  playButton.addEventListener("click", playAudio);
+  clearInterval(intervalID);
+  clearInterval(intervalID2);
+}
 
 function showHome() {
   homePage.style.display = "block";
   project1Page.style.display = "none";
   project2Page.style.display = "none";
   project3Page.style.display = "none";
+  project4Page.style.display = "none"; 
   homeNav.classList.toggle("taskbar-button-active");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.remove("taskbar-button-active");
+  project4Nav.classList.remove("taskbar-button-active");
 
   audioFile.pause();
   playImage.src = "project2/images/buttonplay.webp";
@@ -40,11 +65,13 @@ function showProject1() {
   project1Page.style.display = "block";
   project2Page.style.display = "none";
   project3Page.style.display = "none";
+  project4Page.style.display = "none"; 
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.toggle("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.remove("taskbar-button-active");
+  project4Nav.classList.remove("taskbar-button-active");
 
   let answer1 = document.getElementById("answer-1");
   let icon1 = document.getElementById("icon-1");
@@ -83,11 +110,14 @@ function showProject2() {
   project1Page.style.display = "none";
   project2Page.style.display = "block";
   project3Page.style.display = "none";
+  project4Page.style.display = "none"; 
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.toggle("taskbar-button-active");
   project3Nav.classList.remove("taskbar-button-active");
+  project4Nav.classList.remove("taskbar-button-active");
+
 }
 
 function showProject3() {
@@ -95,11 +125,13 @@ function showProject3() {
   project1Page.style.display = "none";
   project2Page.style.display = "none";
   project3Page.style.display = "block";
+  project4Page.style.display = "none"; 
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.toggle("taskbar-button-active");
+  project4Nav.classList.remove("taskbar-button-active");
 
   audioFile.pause();
   playImage.src = "project2/images/buttonplay.webp";
