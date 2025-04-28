@@ -1,0 +1,185 @@
+#project3-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 25px 60px 25px;
+}
+
+#project3-page .headerPgraph {
+  padding: 0px 0px 40px 0px;
+  max-width: 500px;
+}
+
+#project3-page .headerPgraph h1 {
+  color: #ffffff;
+  font-family: "nikkyouSans";
+  font-size: 32px;
+  font-weight: normal;
+  padding: 0px 0px 8px 0px;
+}
+
+#project3-page .headerPgraph p {
+  color: #ffffff;
+  font-family: "courierNew";
+  font-size: 17px;
+  text-indent: 30px;
+  padding: 0px 0px 8px 0px;
+}
+
+@font-face {
+  font-family: "jhenghei";
+  src: url(fonts/msjh.ttc);
+}
+
+@font-face {
+  font-family: "plush";
+  src: url(fonts/Plush-ZpZx.ttf);
+}
+
+#project3-page img {
+  max-width: 100%;
+  height: auto;
+}
+
+#project3-page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  padding: 60px 15px 60px 15px;
+  background-color: #fadac7;
+  border-radius: 20px;
+  border: #000000 5px solid;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  background-color: #fa5449;
+  border-radius: 25px;
+  color: #fadac7;
+}
+
+#header h1 {
+  font-size: 75px;
+  font-family: "plush";
+  font-weight: normal;
+}
+
+#header p {
+  font-size: 23px;
+  font-family: "jhenghei";
+}
+
+#shop-content {
+  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px 15px;
+}
+
+#project3-page .product-card {
+  width: 350px;
+  height: 425px;
+  position: relative;
+  border-radius: 25px;
+  transition: 0.65s;
+}
+
+#project3-page .product-card:hover {
+  filter: drop-shadow(0 0 0.55rem rgba(255, 48, 34, 0.8));
+}
+
+#project3-page .card-info {
+  display: flex;
+  background-color: #fa5449;
+  width: 350px;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-between;
+  border-radius: 25px;
+  scale: 102.2%;
+  font-family: "plush";
+  text-align: center;
+  color: #fadac7;
+}
+
+#project3-page .card-name {
+  font-size: 33px;
+  padding: 15px 0px 0px 20px;
+}
+
+#project3-page .card-shipping {
+  font-size: 15px;
+  font-family: "jhenghei";
+  margin: -6px;
+  font-weight: bold;
+}
+
+#project3-page .card-price h1 {
+  font-size: 50px;
+  padding: 5px 25px 0px 21px;
+  margin: 0px;
+  font-weight: normal;
+}
+
+#project3-page .card-price p {
+  font-size: 20px;
+  padding: 0px;
+  margin: -12px;
+}
+
+#project3-page #documentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#project3-page #documentation-imagebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+#project3-page #documentation p {
+  padding: 50px 0px 0px 0px;
+  font-family: "jhenghei";
+  width: 40%;
+  font-size: 20px;
+}
+
+#project3-page #documentation img {
+  padding: 50px 0px 0px 0px;
+}
+
+/* --- */
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 480px) {
+  #project3-page .headerPgraph {
+    padding: 20px 0px 40px 0px;
+    max-width: 480px;
+  }
+  #project3-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 10px 60px 10px;
+    max-width: 480px;
+  }
+
+  #project3-page main {
+    padding: 30px 5px 30px 5px;
+  }
+}

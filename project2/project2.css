@@ -1,0 +1,172 @@
+#project2-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 25px 60px 25px;
+}
+
+#project2-page .headerPgraph {
+  padding: 0px 0px 40px 0px;
+  max-width: 500px;
+}
+
+#project2-page .headerPgraph h1 {
+  color: #ffffff;
+  font-family: "nikkyouSans";
+  font-size: 32px;
+  font-weight: normal;
+  padding: 0px 0px 8px 0px;
+}
+
+#project2-page .headerPgraph p {
+  color: #ffffff;
+  font-family: "courierNew";
+  font-size: 17px;
+  text-indent: 30px;
+  padding: 0px 0px 8px 0px;
+}
+
+@font-face {
+  font-family: "courierNew";
+  src: url(fonts/cour.ttf);
+}
+
+@font-face {
+  font-family: "courierNewBold";
+  src: url(fonts/courbd.ttf);
+}
+
+#project2-page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1100px;
+  align-items: center;
+  padding: 60px 25px 60px 25px;
+  background-color: #f48cb2;
+  border-radius: 20px;
+  border: #000000 5px solid;
+  padding: 60px 25px 60px 25px;
+}
+
+#project2-page .header-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0px 0px 130px 0px;
+}
+
+#project2-page img {
+  max-width: 100%;
+  height: auto;
+  border: #000000 5px solid;
+  border-radius: 25px;
+}
+
+#project2-page .button-div {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 5ch;
+  width: 550px;
+  height: 200px;
+  background-color: #f69fbf;
+  color: #000000;
+  border: #000000 5px solid;
+  border-radius: 25px;
+}
+
+#project2-page .play-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0px 0px 5px 0px;
+}
+#project2-page .play-div img {
+  max-width: 100%;
+  height: 40px;
+  border: #000000 0px solid;
+  border-radius: 0px;
+}
+#project2-page .timer-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 0px 0px 0px;
+}
+
+#project2-page h1 {
+  font-family: "courierNewBold";
+  font-size: 4ch;
+  padding: 0px 0px 4px 0px;
+}
+#project2-page h2 {
+  font-family: "courierNew";
+  font-size: 2.5ch;
+  padding: 0px 0px 6px 0px;
+}
+#project2-page p {
+  font-family: "courierNew";
+  font-size: 2ch;
+}
+#project2-page .timer-div p {
+  font-family: "courierNewBold";
+  font-size: 2.1ch;
+}
+#project2-page #progress-bar {
+  max-width: 190px;
+  width: 100%;
+}
+
+#project2-page #documentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+#project2-page .documentation-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 60px;
+  min-width: 400px;
+}
+
+#documentation-text {
+  font-family: "courierNew";
+  font-size: 3ch;
+  padding: 0px 0px 20px 0px;
+  color: #000000;
+  text-align: center;
+  width: 40%;
+}
+
+#project2-page .spacer {
+  height: 45px;
+}
+
+#project2-page button {
+  appearance: none;
+  background-color: #f69fbf;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  #project2-page .headerPgraph {
+    padding: 20px 0px 40px 0px;
+    max-width: 480px;
+  }
+  #project2-page {
+    display: flex;
+    justify-content: center;
+    padding: 60px 50px 60px 50px;
+    max-width: 480px;
+  }
+
+  #project2-page main {
+    padding: 30px 5px 30px 5px;
+  }
+}

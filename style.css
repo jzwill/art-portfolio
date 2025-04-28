@@ -1,0 +1,180 @@
+/* Recommended CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "courierNew";
+  src: url(fonts/cour.ttf);
+}
+
+@font-face {
+  font-family: "nikkyouSans";
+  src: url(fonts/NikkyouSans.ttf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #000000;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#taskbar-header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+#taskbar-header-right {
+  width: 100%;
+  max-width: 550px;
+  padding: 0px 0px 0px 20px;
+  color: #ffffff;
+}
+
+#taskbar-header-left {
+  padding: 0px 20px 0px 20px;
+}
+
+#taskbar-name {
+  font-family: "nikkyouSans";
+  font-size: 40px;
+  font-weight: normal;
+}
+
+#taskbar-title {
+  font-family: "courierNew";
+  font-size: 20px;
+  padding: 0px 0px 0px 2px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.taskbar-button {
+  font-family: "courierNew";
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+.taskbar-button-active {
+  font-family: "courierNew";
+  color: #ffffff;
+  background-color: #4c4c4c;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+.taskbar-button:hover {
+  color: #ffffff;
+  background-color: #4c4c4c;
+}
+
+/* --- applies the page loading animation to the individual page containers --- */
+
+.pages {
+  animation: pageLoad 0.8s;
+}
+
+/* --- */
+
+@media screen and (max-width: 880px) {
+  #taskbar-header-right {
+    max-width: 550px;
+    padding: 0px 0px 0px 5px;
+  }
+
+  #taskbar-header-left {
+    padding: 0px 5px 0px 5px;
+  }
+
+  #taskbar-name {
+    font-size: 30px;
+  }
+
+  #taskbar-title {
+    font-size: 15px;
+    padding: 0px 0px 0px 2px;
+  }
+
+  .taskbar-button {
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .taskbar-button-active {
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #taskbar-name {
+    font-size: 28px;
+  }
+
+  #taskbar-title {
+    font-size: 15px;
+    padding: 0px 0px 0px 2px;
+  }
+
+  .taskbar-button {
+    font-size: 15px;
+    padding: 10px 4px 10px 4px;
+  }
+
+  .taskbar-button-active {
+    font-size: 15px;
+    padding: 10px 4px 10px 4px;
+  }
+
+  #taskbar-header {
+    width: 410px;
+    height: 100px;
+  }
+}
+
+/* --- page loading animation --- */
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateX(-4%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
