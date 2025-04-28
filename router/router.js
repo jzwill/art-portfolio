@@ -20,6 +20,11 @@ const routes = [
     html: "project3/project3.html",
     js: "project3/project3.js",
   },
+  {
+    id: "project4",
+    html: "project4/project4.html",
+    js: "project4/project4.js",
+  },
 ];
 
 function loadRoute(route) {
