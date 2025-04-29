@@ -28,7 +28,6 @@ const routes = [
   {
     id: "rockpage",
     html: "project4/rockpage/rockpage.html",
-    js: "project4/rockpage/rockpage.js",
   },
 ];
 
