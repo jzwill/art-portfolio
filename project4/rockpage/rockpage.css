@@ -30,10 +30,11 @@ main {
   width: 100%;
 }
 
-#site-content {
+.site-content-subpage {
   margin: 40px 0px 0px 0px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #left-side {
