@@ -17,7 +17,18 @@ main {
 }
 
 #rockpage-page img {
-  padding: 10px 0px 10px 0px;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 33%;
+}
+
+#rockpage-page img:hover {
+  opacity:0.7;
+}
+
+#rockpage-page iframe {
+  padding: 10px 0px 30px 0px;
   border-radius: 15px;
   cursor: pointer;
 }
@@ -35,24 +46,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#left-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0px 30px 0px 10px;
-  gap: 35px;
-}
-
-#right-side {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  padding: 0px 10px 0px 30px;
-  gap: 35px;
 }
 
 .content-groupings {
@@ -77,28 +70,9 @@ main {
   padding: 0px 0px 8px 0px;
 }
 
-.img-holder {
-  position: relative;
-}
-
-.img-holder button {
-  position: absolute;
-  bottom: 42%;
-  width: 20px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  color: rgba(0, 0, 0, 0.7);
-  cursor: pointer;
-  border-radius: 15px;
-  filter: drop-shadow(0 0 #000000);
-}
-
-.leftie {
-  left: 0px;
-}
-
-.rightie {
-  right: 0px;
+.img-holder-subpage {
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (max-width: 480px) {
