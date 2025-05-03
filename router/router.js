@@ -40,6 +40,56 @@ const routes = [
     html: "project4/subpage/fishpage.html",
     css: "project4/subpage/proj4subpage.css",
   },
+  {
+    id: "fountainpage",
+    html: "project4/subpage/fountainpage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "hammerpage",
+    html: "project4/subpage/hammerpage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "handpage",
+    html: "project4/subpage/handpage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "churchpage",
+    html: "project4/subpage/churchpage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "backpackpage",
+    html: "project4/subpage/backpackpage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "treepage",
+    html: "project4/subpage/treepage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "housepage",
+    html: "project4/subpage/housepage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "dioramapage",
+    html: "project4/subpage/dioramapage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "firepage",
+    html: "project4/subpage/firepage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
+  {
+    id: "dioramafinalpage",
+    html: "project4/subpage/dioramafinalpage.html",
+    css: "project4/subpage/proj4subpage.css",
+  },
 ];
 
 function loadRoute(route) {
