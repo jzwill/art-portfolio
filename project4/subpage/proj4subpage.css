@@ -1,4 +1,4 @@
-#rockpage-page {
+.proj4subpage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,18 +16,18 @@ main {
   width: 100%;
 }
 
-#rockpage-page img {
+.proj4subpage img {
   padding: 0px 10px 0px 10px;
   border-radius: 15px;
   cursor: pointer;
   width: 33%;
 }
 
-#rockpage-page img:hover {
+.proj4subpage img:hover {
   opacity:0.7;
 }
 
-#rockpage-page iframe {
+.proj4subpage iframe {
   padding: 10px 0px 30px 0px;
   border-radius: 15px;
   cursor: pointer;
@@ -54,7 +54,14 @@ main {
   padding: 0px 0px 5px 0px;
 }
 
-#rockpage-page h1 {
+.content-groupings-subhead {
+  width: 50%;
+  height: auto;
+  padding: 0px 0px 5px 0px;
+  justify-content: center;
+}
+
+.proj4subpage h1 {
   color: #ffffff;
   font-family: "nikkyouSans";
   font-size: 32px;
@@ -62,7 +69,7 @@ main {
   padding: 0px 0px 8px 0px;
 }
 
-#rockpage-page p {
+.proj4subpage p {
   color: #ffffff;
   font-family: "courierNew";
   font-size: 17px;
@@ -73,6 +80,10 @@ main {
 .img-holder-subpage {
   flex-direction: row;
   justify-content: center;
+}
+
+.spacer {
+  height: 20px;
 }
 
 @media screen and (max-width: 480px) {

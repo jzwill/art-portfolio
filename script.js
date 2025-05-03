@@ -27,6 +27,7 @@ function showHome() {
   project3Page.style.display = "none";
   project4Page.style.display = "none"; 
   rockPage.style.display = "none";
+  fishPage.style.display = "none";
   homeNav.classList.toggle("taskbar-button-active");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
@@ -48,6 +49,7 @@ function showProject1() {
   project3Page.style.display = "none";
   project4Page.style.display = "none"; 
   rockPage.style.display = "none";
+  fishPage.style.display = "none";
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.toggle("taskbar-button-active");
@@ -94,6 +96,7 @@ function showProject2() {
   project3Page.style.display = "none";
   project4Page.style.display = "none"; 
   rockPage.style.display = "none";
+  fishPage.style.display = "none";
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
@@ -110,6 +113,7 @@ function showProject3() {
   project3Page.style.display = "block";
   project4Page.style.display = "none"; 
   rockPage.style.display = "none";
+  fishPage.style.display = "none";
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
@@ -132,6 +136,7 @@ function showProject4() {
   project3Page.style.display = "none";
   project4Page.style.display = "block"; 
   rockPage.style.display = "none";
+  fishPage.style.display = "none";
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
