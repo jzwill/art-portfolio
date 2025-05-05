@@ -39,15 +39,11 @@ houseNav.addEventListener("click", showHouse);
 dioramaNav.addEventListener("click", showDiorama);
 fireNav.addEventListener("click", showFire);
 dioramafinalNav.addEventListener("click", showDioramafinal);
-backNav.addEventListener("click", showProject4);
+backNav.addEventListener("click", showProject4insub);
 
 //
 
-function showProject4() {
-  homePage.style.display = "none";
-  project1Page.style.display = "none";
-  project2Page.style.display = "none";
-  project3Page.style.display = "none";
+function showProject4insub() {
   project4Page.style.display = "block"; 
   rockPage.style.display = "none";
   fishPage.style.display = "none";
