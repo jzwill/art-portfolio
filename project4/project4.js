@@ -10,6 +10,7 @@ const houseNav = document.getElementById("house-nav");
 const dioramaNav = document.getElementById("diorama-nav");
 const fireNav = document.getElementById("fire-nav");
 const dioramafinalNav = document.getElementById("dioramafinal-nav");
+const backNav = document.getElementById("back-nav");
 
 const rockPage = document.getElementById("rockpage-page");
 const fishPage = document.getElementById("fishpage-page");
@@ -38,8 +39,35 @@ houseNav.addEventListener("click", showHouse);
 dioramaNav.addEventListener("click", showDiorama);
 fireNav.addEventListener("click", showFire);
 dioramafinalNav.addEventListener("click", showDioramafinal);
+backNav.addEventListener("click", showProject4);
 
 //
+
+function showProject4() {
+  homePage.style.display = "none";
+  project1Page.style.display = "none";
+  project2Page.style.display = "none";
+  project3Page.style.display = "none";
+  project4Page.style.display = "block"; 
+  rockPage.style.display = "none";
+  fishPage.style.display = "none";
+  fountainPage.style.display = "none";
+  hammerPage.style.display = "none";
+  handPage.style.display = "none";
+  churchPage.style.display = "none";
+  backpackPage.style.display = "none";
+  treePage.style.display = "none";
+  housePage.style.display = "none";
+  dioramaPage.style.display = "none";
+  firePage.style.display = "none";
+  dioramafinalPage.style.display = "none";
+  homeNav.classList.remove("taskbar-button-active");
+  homeNav.classList.add("taskbar-button");
+  project1Nav.classList.remove("taskbar-button-active");
+  project2Nav.classList.remove("taskbar-button-active");
+  project3Nav.classList.remove("taskbar-button-active");
+  project4Nav.classList.toggle("taskbar-button-active");
+}
 
 function showRock() {
   project4Page.style.display = "none";

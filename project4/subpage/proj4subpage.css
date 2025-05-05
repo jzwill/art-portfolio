@@ -33,6 +33,14 @@ main {
   cursor: pointer;
 }
 
+.proj4subpage button {
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 33%;
+  color: red;
+}
+
 #secret {
   display: flex;
   flex-direction: column;
