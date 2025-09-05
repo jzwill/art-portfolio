@@ -16,7 +16,7 @@ const routes = [
     id: "project2",
     html: "project2/project2.html",
     js: "project2/project2.js",
-    js: "project2/project2.css",
+    css: "project2/project2.css",
   },
   {
     id: "project3",
