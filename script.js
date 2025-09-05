@@ -10,15 +10,11 @@ const project2Page = document.getElementById("project2-page");
 const project3Page = document.getElementById("project3-page");
 const project4Page = document.getElementById("project4-page");
 
-//
-
 homeNav.addEventListener("click", showHome);
 project1Nav.addEventListener("click", showProject1);
 project2Nav.addEventListener("click", showProject2);
 project3Nav.addEventListener("click", showProject3);
 project4Nav.addEventListener("click", showProject4);
-
-//
 
 function displayNone() {
   homePage.style.display = "none";
@@ -40,16 +36,16 @@ function displayNone() {
   dioramafinalPage.style.display = "none";
 }
 
-function showHome() {
-  displayNone();
-  homePage.style.display = "block";
-
-  homeNav.classList.toggle("taskbar-button-active");
+function taskbarNone() {
+  homeNav.classList.remove("taskbar-button-active");
+  homeNav.classList.add("taskbar-button");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.remove("taskbar-button-active");
   project4Nav.classList.remove("taskbar-button-active");
+}
 
+function audioStop() {
   audioFile.pause();
   playImage.src = "project2/images/buttonplay.webp";
   playButton.removeEventListener("click", pauseAudio);
@@ -58,16 +54,20 @@ function showHome() {
   clearInterval(intervalID2);
 }
 
+function showHome() {
+  displayNone();
+  taskbarNone();
+  homePage.style.display = "block";
+  homeNav.classList.toggle("taskbar-button-active");
+
+  audioStop();
+}
+
 function showProject1() {
   displayNone();
+  taskbarNone();
   project1Page.style.display = "block";
-
-  homeNav.classList.remove("taskbar-button-active");
-  homeNav.classList.add("taskbar-button");
   project1Nav.classList.toggle("taskbar-button-active");
-  project2Nav.classList.remove("taskbar-button-active");
-  project3Nav.classList.remove("taskbar-button-active");
-  project4Nav.classList.remove("taskbar-button-active");
 
   let answer1 = document.getElementById("answer-1");
   let icon1 = document.getElementById("icon-1");
@@ -93,105 +93,32 @@ function showProject1() {
   qbutton4.classList.remove("hovered-over");
   icon4.classList.remove("inactive-icon");
 
-  audioFile.pause();
-  playImage.src = "project2/images/buttonplay.webp";
-  playButton.removeEventListener("click", pauseAudio);
-  playButton.addEventListener("click", playAudio);
-  clearInterval(intervalID);
-  clearInterval(intervalID2);
+  audioStop();
 }
 
 function showProject2() {
-  homePage.style.display = "none";
-  project1Page.style.display = "none";
+  displayNone();
+  taskbarNone();
   project2Page.style.display = "block";
-  project3Page.style.display = "none";
-  project4Page.style.display = "none"; 
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
-  homeNav.classList.remove("taskbar-button-active");
-  homeNav.classList.add("taskbar-button");
-  project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.toggle("taskbar-button-active");
-  project3Nav.classList.remove("taskbar-button-active");
-  project4Nav.classList.remove("taskbar-button-active");
-
 }
 
 function showProject3() {
-  homePage.style.display = "none";
-  project1Page.style.display = "none";
-  project2Page.style.display = "none";
+  displayNone();
+  taskbarNone();
   project3Page.style.display = "block";
-  project4Page.style.display = "none"; 
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
-  homeNav.classList.remove("taskbar-button-active");
-  homeNav.classList.add("taskbar-button");
-  project1Nav.classList.remove("taskbar-button-active");
-  project2Nav.classList.remove("taskbar-button-active");
   project3Nav.classList.toggle("taskbar-button-active");
-  project4Nav.classList.remove("taskbar-button-active");
 
-  audioFile.pause();
-  playImage.src = "project2/images/buttonplay.webp";
-  playButton.removeEventListener("click", pauseAudio);
-  playButton.addEventListener("click", playAudio);
-  clearInterval(intervalID);
-  clearInterval(intervalID2);
+  audioStop();
 }
 
 function showProject4() {
-  homePage.style.display = "none";
-  project1Page.style.display = "none";
-  project2Page.style.display = "none";
-  project3Page.style.display = "none";
-  project4Page.style.display = "block"; 
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
-  homeNav.classList.remove("taskbar-button-active");
-  homeNav.classList.add("taskbar-button");
-  project1Nav.classList.remove("taskbar-button-active");
-  project2Nav.classList.remove("taskbar-button-active");
-  project3Nav.classList.remove("taskbar-button-active");
+  displayNone();
+  taskbarNone();
+  project4Page.style.display = "block";
   project4Nav.classList.toggle("taskbar-button-active");
 
-  audioFile.pause();
-  playImage.src = "project2/images/buttonplay.webp";
-  playButton.removeEventListener("click", pauseAudio);
-  playButton.addEventListener("click", playAudio);
-  clearInterval(intervalID);
-  clearInterval(intervalID2);
+  audioStop();
 }
 
 var slideIndex = 1;
