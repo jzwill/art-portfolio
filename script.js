@@ -20,8 +20,8 @@ project4Nav.addEventListener("click", showProject4);
 
 //
 
-function showHome() {
-  homePage.style.display = "block";
+function displayNone() {
+  homePage.style.display = "none";
   project1Page.style.display = "none";
   project2Page.style.display = "none";
   project3Page.style.display = "none";
@@ -38,6 +38,12 @@ function showHome() {
   dioramaPage.style.display = "none";
   firePage.style.display = "none";
   dioramafinalPage.style.display = "none";
+}
+
+function showHome() {
+  displayNone();
+  homePage.style.display = "block";
+
   homeNav.classList.toggle("taskbar-button-active");
   project1Nav.classList.remove("taskbar-button-active");
   project2Nav.classList.remove("taskbar-button-active");
@@ -53,23 +59,9 @@ function showHome() {
 }
 
 function showProject1() {
-  homePage.style.display = "none";
+  displayNone();
   project1Page.style.display = "block";
-  project2Page.style.display = "none";
-  project3Page.style.display = "none";
-  project4Page.style.display = "none"; 
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
+
   homeNav.classList.remove("taskbar-button-active");
   homeNav.classList.add("taskbar-button");
   project1Nav.classList.toggle("taskbar-button-active");
