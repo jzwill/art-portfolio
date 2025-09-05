@@ -68,191 +68,59 @@ function showProject4insub() {
 function showRock() {
   project4Page.style.display = "none";
   rockPage.style.display = "block";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showFish() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
   fishPage.style.display = "block";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showFountain() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
   fountainPage.style.display = "block";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showHammer() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
   hammerPage.style.display = "block";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showHand() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
   handPage.style.display = "block";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showChurch() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
   churchPage.style.display = "block";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showBackpack() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
   backpackPage.style.display = "block";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showTree() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
   treePage.style.display = "block";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showHouse() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
   housePage.style.display = "block";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showDiorama() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
   dioramaPage.style.display = "block";
-  firePage.style.display = "none";
-  dioramafinalPage.style.display = "none";
 }
 
 function showFire() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
   firePage.style.display = "block";
-  dioramafinalPage.style.display = "none";
 }
 
 function showDioramafinal() {
   project4Page.style.display = "none";
-  rockPage.style.display = "none";
-  fishPage.style.display = "none";
-  fountainPage.style.display = "none";
-  hammerPage.style.display = "none";
-  handPage.style.display = "none";
-  churchPage.style.display = "none";
-  backpackPage.style.display = "none";
-  treePage.style.display = "none";
-  housePage.style.display = "none";
-  dioramaPage.style.display = "none";
-  firePage.style.display = "none";
   dioramafinalPage.style.display = "block";
 }
