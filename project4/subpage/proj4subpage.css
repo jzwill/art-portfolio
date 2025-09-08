@@ -35,11 +35,10 @@ main {
 }
 
 .proj4subpage button {
-  padding: 0px 10px 0px 10px;
+  margin: 10px 20px 10px 20px;
   border-radius: 15px;
   cursor: pointer;
-  width: 33%;
-  color: red;
+  width: 15%;
 }
 
 #secret {
@@ -63,11 +62,19 @@ main {
   padding: 0px 0px 5px 0px;
 }
 
+.content-groupings-header {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .content-groupings-subhead {
   width: 65%;
   height: auto;
   padding: 0px 0px 5px 0px;
-  justify-content: center;
+  justify-content: left;
 }
 
 .proj4subpage h1 {

@@ -27,8 +27,6 @@ const firePage = document.getElementById("firepage-page");
 
 const dioramafinalPage = document.getElementById("dioramafinalpage-page");
 
-//
-
 rockNav.addEventListener("click", showRock);
 fishNav.addEventListener("click", showFish);
 fountainNav.addEventListener("click", showFountain);
