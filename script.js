@@ -17,6 +17,7 @@ project3Nav.addEventListener("click", showProject3);
 project4Nav.addEventListener("click", showProject4);
 
 function displayNone() {
+  window.scrollTo(0, 0);
   homePage.style.display = "none";
   project1Page.style.display = "none";
   project2Page.style.display = "none";
