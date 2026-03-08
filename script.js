@@ -46,22 +46,11 @@ function taskbarNone() {
   project4Nav.classList.remove("taskbar-button-active");
 }
 
-function audioStop() {
-  audioFile.pause();
-  playImage.src = "project2/images/buttonplay.webp";
-  playButton.removeEventListener("click", pauseAudio);
-  playButton.addEventListener("click", playAudio);
-  clearInterval(intervalID);
-  clearInterval(intervalID2);
-}
-
 function showHome() {
   displayNone();
   taskbarNone();
   homePage.style.display = "block";
   homeNav.classList.toggle("taskbar-button-active");
-
-  audioStop();
 }
 
 function showProject1() {
@@ -69,32 +58,6 @@ function showProject1() {
   taskbarNone();
   project1Page.style.display = "block";
   project1Nav.classList.toggle("taskbar-button-active");
-
-  let answer1 = document.getElementById("answer-1");
-  let icon1 = document.getElementById("icon-1");
-  answer1.classList.remove("open-answer");
-  qbutton1.classList.remove("hovered-over");
-  icon1.classList.remove("inactive-icon");
-
-  let answer2 = document.getElementById("answer-2");
-  let icon2 = document.getElementById("icon-2");
-  answer2.classList.remove("open-answer");
-  qbutton2.classList.remove("hovered-over");
-  icon2.classList.remove("inactive-icon");
-
-  let answer3 = document.getElementById("answer-3");
-  let icon3 = document.getElementById("icon-3");
-  answer3.classList.remove("open-answer");
-  qbutton3.classList.remove("hovered-over");
-  icon3.classList.remove("inactive-icon");
-
-  let answer4 = document.getElementById("answer-4");
-  let icon4 = document.getElementById("icon-4");
-  answer4.classList.remove("open-answer");
-  qbutton4.classList.remove("hovered-over");
-  icon4.classList.remove("inactive-icon");
-
-  audioStop();
 }
 
 function showProject2() {
@@ -109,8 +72,6 @@ function showProject3() {
   taskbarNone();
   project3Page.style.display = "block";
   project3Nav.classList.toggle("taskbar-button-active");
-
-  audioStop();
 }
 
 function showProject4() {
@@ -118,8 +79,6 @@ function showProject4() {
   taskbarNone();
   project4Page.style.display = "block";
   project4Nav.classList.toggle("taskbar-button-active");
-
-  audioStop();
 }
 
 var slideIndex = 1;
