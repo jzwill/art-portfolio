@@ -39,8 +39,6 @@
   justify-content: center;
 }
 
-
-
 .content-groupings-header {
   width: 100%;
   height: auto;
@@ -56,12 +54,20 @@
   justify-content: left;
 }
 
+.content-groupings-body {
+  width: 90%;
+  height: auto;
+  padding: 0px 0px 5px 0px;
+  justify-content: left;
+}
+
 .proj4subpage h1 {
   color: #ffffff;
   font-family: "nikkyouSans";
   font-size: 32px;
   font-weight: normal;
   padding: 0px 0px 8px 0px;
+  
 }
 
 .proj4subpage p {

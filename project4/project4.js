@@ -46,65 +46,78 @@ backNav.addEventListener("click", showProject4insub);
 
 function showProject4insub() {
   displayNone();
+  window.scrollTo(0, 0);
   project4Page.style.display = "block"; 
 }
 
 function showRock() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   rockPage.style.display = "block";
 }
 
 function showFish() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   fishPage.style.display = "block";
 }
 
 function showFountain() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   fountainPage.style.display = "block";
 }
 
 function showHammer() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   hammerPage.style.display = "block";
 }
 
 function showHand() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   handPage.style.display = "block";
 }
 
 function showChurch() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   churchPage.style.display = "block";
 }
 
 function showBackpack() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   backpackPage.style.display = "block";
 }
 
 function showTree() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   treePage.style.display = "block";
 }
 
 function showHouse() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   housePage.style.display = "block";
 }
 
 function showDiorama() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   dioramaPage.style.display = "block";
 }
 
 function showFire() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   firePage.style.display = "block";
 }
 
 function showDioramafinal() {
+  window.scrollTo(0, 0);
   project4Page.style.display = "none";
   dioramafinalPage.style.display = "block";
 }
