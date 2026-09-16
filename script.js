@@ -35,6 +35,8 @@ function displayNone() {
   dioramaPage.style.display = "none";
   firePage.style.display = "none";
   dioramafinalPage.style.display = "none";
+  loop1Page.style.display = "none";
+  loop2Page.style.display = "none";
 }
 
 function taskbarNone() {

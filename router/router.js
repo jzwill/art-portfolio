@@ -90,12 +90,12 @@ const routes = [
     html: "project4/subpage/dioramafinalpage.html",
     css: "project4/subpage/proj4subpage.css",
   },
-    {
+  {
     id: "loop1page",
     html: "project3/subpage/loop1page.html",
     css: "project3/subpage/proj3subpage.css",
   },
-    {
+  {
     id: "loop2page",
     html: "project3/subpage/loop2page.html",
     css: "project3/subpage/proj3subpage.css",
