@@ -35,6 +35,8 @@ function displayNone() {
   dioramaPage.style.display = "none";
   firePage.style.display = "none";
   dioramafinalPage.style.display = "none";
+  loop1Page.style.display = "none";
+  loop2Page.style.display = "none";
 }
 
 function taskbarNone() {
@@ -46,22 +48,11 @@ function taskbarNone() {
   project4Nav.classList.remove("taskbar-button-active");
 }
 
-function audioStop() {
-  audioFile.pause();
-  playImage.src = "project2/images/buttonplay.webp";
-  playButton.removeEventListener("click", pauseAudio);
-  playButton.addEventListener("click", playAudio);
-  clearInterval(intervalID);
-  clearInterval(intervalID2);
-}
-
 function showHome() {
   displayNone();
   taskbarNone();
   homePage.style.display = "block";
   homeNav.classList.toggle("taskbar-button-active");
-
-  audioStop();
 }
 
 function showProject1() {
@@ -69,32 +60,6 @@ function showProject1() {
   taskbarNone();
   project1Page.style.display = "block";
   project1Nav.classList.toggle("taskbar-button-active");
-
-  let answer1 = document.getElementById("answer-1");
-  let icon1 = document.getElementById("icon-1");
-  answer1.classList.remove("open-answer");
-  qbutton1.classList.remove("hovered-over");
-  icon1.classList.remove("inactive-icon");
-
-  let answer2 = document.getElementById("answer-2");
-  let icon2 = document.getElementById("icon-2");
-  answer2.classList.remove("open-answer");
-  qbutton2.classList.remove("hovered-over");
-  icon2.classList.remove("inactive-icon");
-
-  let answer3 = document.getElementById("answer-3");
-  let icon3 = document.getElementById("icon-3");
-  answer3.classList.remove("open-answer");
-  qbutton3.classList.remove("hovered-over");
-  icon3.classList.remove("inactive-icon");
-
-  let answer4 = document.getElementById("answer-4");
-  let icon4 = document.getElementById("icon-4");
-  answer4.classList.remove("open-answer");
-  qbutton4.classList.remove("hovered-over");
-  icon4.classList.remove("inactive-icon");
-
-  audioStop();
 }
 
 function showProject2() {
@@ -109,8 +74,6 @@ function showProject3() {
   taskbarNone();
   project3Page.style.display = "block";
   project3Nav.classList.toggle("taskbar-button-active");
-
-  audioStop();
 }
 
 function showProject4() {
@@ -118,9 +81,10 @@ function showProject4() {
   taskbarNone();
   project4Page.style.display = "block";
   project4Nav.classList.toggle("taskbar-button-active");
-
-  audioStop();
 }
+
+
+
 
 var slideIndex = 1;
 showDivsArt(slideIndex);
@@ -154,6 +118,50 @@ function plusDivsPhotos(n) {
 function showDivsPhotos(n) {
   var i;
   var x = document.getElementsByClassName("photoSlides");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
+
+var slideIndex = 1;
+showDivsGames(slideIndex);
+
+function plusDivsGames(n) {
+  showDivsGames((slideIndex += n));
+}
+
+function showDivsGames(n) {
+  var i;
+  var x = document.getElementsByClassName("gameSlides");
+  if (n > x.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
+
+var slideIndex = 1;
+showDivsGraphic(slideIndex);
+
+function plusDivsGraphic(n) {
+  showDivsGraphic((slideIndex += n));
+}
+
+function showDivsGraphic(n) {
+  var i;
+  var x = document.getElementsByClassName("graphicSlides");
   if (n > x.length) {
     slideIndex = 1;
   }
