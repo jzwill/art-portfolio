@@ -83,6 +83,9 @@ function showProject4() {
   project4Nav.classList.toggle("taskbar-button-active");
 }
 
+
+
+
 var slideIndex = 1;
 showDivsArt(slideIndex);
 
